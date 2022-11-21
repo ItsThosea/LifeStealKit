@@ -1,0 +1,155 @@
+# Here you can enable/disable specific combat restrictions
+# present on the LifeSteal SMP
+
+# Note: This plugin assumes that players have not already obtained
+# unobtainable items, such as items bypassing the enchantment limits.
+
+# If this is disabled, then only worlds listed in a module config
+# will be affected. Otherwise, the module will be disabled
+# in worlds listed in a module config.
+world-blacklist: true
+
+# Enchantment limits:
+enchant-limits:
+  enabled: true
+  worlds: []
+  bypass-with-op: false
+  bypass-permission: ""
+
+  limits:
+    protection: 3
+    sharpness: 3
+    riptide: 0 # Disabled
+    quick_charge: 2
+    piercing: 2
+    power: 3
+
+# No netherite:
+# Items listed in disabled-items will be disabled from being taken
+# from the result slot of a smithing table.
+no-netherite:
+  enabled: true
+  worlds: []
+  bypass-with-op: false
+  bypass-permission: ""
+
+  disabled-items:
+    - netherite_boots
+    - netherite_leggings
+    - netherite_chestplate
+    - netherite_helmet
+    - netherite_sword
+    - netherite_axe
+
+# No totems:
+# On LifeSteal, totems do not pop and you will instead die,
+# even with the totem in your main or off hand.
+no-totems:
+  enabled: true
+  worlds: []
+  bypass-with-op: false
+  bypass-permission: ""
+
+  # If enabled, only players in combat will not pop totems
+  only-in-combat: false
+
+# Holding limits:
+# (for performance reasons shulker boxes are not counted toward the limit)
+# Limits to how many of a specific item you can hold in your inventory
+# at once.
+holding-limits:
+  enabled: true
+  worlds: []
+  bypass-with-op: false
+  bypass-permission: ""
+
+  limits:
+    golden_apple: 16
+    ender_pearl: 5
+
+# Combat settings
+combat-settings:
+  enabled: true
+  worlds: []
+  bypass-with-op: false
+  bypass-permission: ""
+
+  # How long is the combat duration (in seconds)?
+  combat-duration: 45
+
+  # If the player logs out during combat, should they be killed?
+  kill-player: true
+
+  # If this is enabled, players will not be able take items
+  # in or out of an ender chest during combat
+  block-echest: true
+
+# No tipped arrows:
+# Prevents players from obtaining tipped arrows
+no-tipped-arrows:
+  enabled: true
+  worlds: []
+  bypass-with-op: false
+  bypass-permission: ""
+
+effects:
+  enabled: true
+  worlds: []
+
+  # These potions cannot be brewed in a brewing stand.
+  # They can still be obtained using beacons, just like
+  # on LifeSteal.
+  # Note: Don't add "minecraft:" at the beginning of an entry, and add _
+  # in place of spaces
+  disabled-effects:
+    - speed
+    - strength
+    - instant_damage
+
+  # These potion effects can only be applied by a plugin
+  # or the /effect command.
+  # Note: These are POTION TYPES (e.g. turtle_master), not POTION EFFECT TYPES
+  completely-disabled:
+    - weakness
+
+  # If enabled, mobs will still be able to have the effects
+  # disabled above.
+  only-disable-for-player: true
+
+  # Note: Bypassing means the player WILL be able to
+  # have effects disabled by "completely-disabled"
+  bypass-with-op: false
+  bypass-permission: ""
+
+# This prevents End Crystals and Respawn Anchors
+# from dealng damage to players.
+no-explosives:
+  enabled: true
+  worlds: []
+
+  # Note: Bypassing means the player WILL take damage
+  # from end crystals and respawn anchors
+  bypass-with-op: false
+  bypass-permission: ""
+
+# Prevents elytras from being worn
+no-elytras:
+  enabled: true
+  worlds: []
+  bypass-with-op: false
+  bypass-permission: ""
+
+# Nerfs TNT minecart damage for players
+# Not on LifeSteal but you might want it because TNT minecarts
+# can instantly kill somebody.
+tnt-minecart-nerf:
+  enabled: false
+  worlds: []
+
+  # Note: Bypassing means the player will take normal damage
+  # from TNT minecarts
+  bypass-with-op: false
+  bypass-permission: ""
+
+  # What should the TNT minecart damage multiplier be?
+  multiplier: 0.45

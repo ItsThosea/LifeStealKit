@@ -1,0 +1,6 @@
+name: LifeStealKit
+version: '${project.version}'
+main: me.jacob.lifestealkit.LifeStealKit
+api-version: 1.17
+authors: [Jacob]
+description: Limits resources and enchants to how they are in LifeSteal season 3

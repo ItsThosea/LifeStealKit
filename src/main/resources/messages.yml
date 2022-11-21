@@ -1,0 +1,9 @@
+placeholder: "" # DO NOT REMOVE THIS!
+no-click: "&cYou can't do that!"
+no-click-combat: "&cYou can't do that in combat!"
+no-netherite: "&cYou cannot make that item netherite!"
+no-elytra: "&cYou can't wear an elytra!"
+no-brew: "&cYou cannot brew that potion!"
+combat-start: "&cYou are now in combat!"
+combat-tick: "&cYou are in combat!"
+combat-end: "&aYou are no longer in combat!"
